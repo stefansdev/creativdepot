@@ -1,0 +1,35 @@
+$susy: (
+    container: 100%,
+    columns: 12,
+    gutters: 0,
+);
+
+// Breakpoints
+$bp_mobile: 425px;
+$bp_tablet: 837px;
+$bp_desktop: 1170px;
+$breakpoint-no-query-fallbacks: true;
+
+
+// Helper classes
+
+.container {
+    @include container;
+    @include susy-breakpoint($bp_mobile) {
+        width: 100%;
+    }
+    @include susy-breakpoint($bp_tablet) {
+        width: 100%;
+    }
+    @include susy-breakpoint($bp_desktop) {
+        width: 1170px;
+    }
+}
+.wrap {
+    padding: 0 15px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: #696969;
+}
