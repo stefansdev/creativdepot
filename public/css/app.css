@@ -402,12 +402,23 @@ body {
   font-weight: 300;
   color: #333; }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0; }
+
 .button {
   background-color: #fff;
   border: 1px solid #b5b5b5;
   border-radius: 2px;
   outline: none;
   padding: 10px 10px; }
+
+hr {
+  margin: 5px 0; }
 
 .dropdown {
   position: relative; }

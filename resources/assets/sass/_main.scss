@@ -10,7 +10,6 @@ $bp_tablet: 837px;
 $bp_desktop: 1170px;
 $breakpoint-no-query-fallbacks: true;
 
-
 // Helper classes
 
 .container {
@@ -27,10 +26,4 @@ $breakpoint-no-query-fallbacks: true;
 }
 .wrap {
     padding: 0 15px;
-}
-
-body {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    color: $text-default;
 }
