@@ -1,4 +1,5 @@
 var elixir = require('laravel-elixir');
+var browserSync = require('laravel-elixir-browsersync');
 
 /*
  |--------------------------------------------------------------------------
@@ -13,11 +14,24 @@ var elixir = require('laravel-elixir');
 
 elixir(function(mix) {
     mix.sass('app.scss');
-});
-
-elixir(function(mix) {
     mix.scripts([
-        'jquery-2.2.2.js',
-        'prism.js',
-    ]);
+        'vendor/jquery-2.2.2.js',
+        'vendor/prism.js',
+    ],
+        'public/js/main.js'
+    ),
+    mix.scripts([
+        'components/dropdown.js'
+    ],
+        'public/js/components.js'
+    );
+    // browserSync.init();
+    // mix.browserSync({
+    //     proxy 			: "creativdepot.dev/public",
+    //     logPrefix		: "Laravel Eixir BrowserSync",
+    //     logConnections	: false,
+    //     reloadOnRestart : false,
+    //     notify 			: false
+    // });
+
 });

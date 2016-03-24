@@ -399,7 +399,43 @@ li {
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #696969; }
+  font-weight: 300;
+  color: #333; }
+
+.button {
+  background-color: #fff;
+  border: 1px solid #b5b5b5;
+  border-radius: 2px;
+  outline: none;
+  padding: 10px 10px; }
+
+.dropdown {
+  position: relative; }
+  .dropdown .dropdown_menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    top: 40px;
+    clear: left;
+    border: 1px solid #b5b5b5;
+    border-radius: 2px;
+    background-color: #fff;
+    padding: 3px 0;
+    min-width: 160px;
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: 2px; }
+    .dropdown .dropdown_menu li {
+      display: list-item; }
+      .dropdown .dropdown_menu li a {
+        display: block;
+        padding: 5px 5px;
+        color: #333; }
+        .dropdown .dropdown_menu li a:hover {
+          background-color: #eeeeee; }
+  .dropdown.active .dropdown_menu {
+    display: block; }
 
 /* http://prismjs.com/download.html?themes=prism-twilight&languages=markup+css+clike+javascript+git+java+json+less+lua+php+jsx+sass+scss */
 /**

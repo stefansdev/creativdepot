@@ -31,5 +31,6 @@ $breakpoint-no-query-fallbacks: true;
 
 body {
     font-family: "Roboto", sans-serif;
-    color: #696969;
+    font-weight: 300;
+    color: $text-default;
 }
