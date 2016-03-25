@@ -21,7 +21,9 @@ elixir(function(mix) {
         'public/js/main.js'
     ),
     mix.scripts([
-        'components/dropdown.js'
+        'components/dropdown.js',
+        'components/popup.js'
+
     ],
         'public/js/components.js'
     );

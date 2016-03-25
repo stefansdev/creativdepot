@@ -43,20 +43,43 @@
             </code></pre>
             <!-- DROPDOWN ENDS -->
 
+            <!-- POPUP STARTS -->
             <h1>PopUp</h1>
             <hr>
 
-            <button type="button" name="button" class="button" popup-trig="popup-1">OPEN POPUP</button>
+            <button type="button" name="button" class="button popup-trig" popup-trig="my-popup">OPEN POPUP</button>
 
-            <div class="popup" id="popup-1">
-                <h2>THIS IS POPUP</h2>
+            <div class="popup" id="my-popup">
+                <div class="popup-container">
+                    <h2>THIS IS POPUP</h2>
+                    <!-- Close button -->
+                    <button type="button" name="button" class="button popup-close" popup-trig="popup-1">X</button>
+                </div>
             </div>
 
             <pre><code class="language-markup">
-
+                &lt;!-- Trigger -->
+                &lt;button type="button" name="button" class="button popup-trig" popup-trig="my-popup">OPEN POPUP&lt;/button>
+                &lt;!-- Popup -->
+                &lt;div class="popup" id="my-popup">
+                    &lt;div class="popup-container">
+                        &lt;h2>THIS IS POPUP&lt;/h2>
+                        &lt;!-- Close button -->
+                        &lt;button type="button" name="button" class="button popup-close" popup-trig="popup-1">X&lt;/button>
+                    &lt;/div>
+                &lt;/div>
             </code></pre>
             <!-- POPUP ENDS -->
 
+            <!-- POPUP STARTS -->
+            <h1></h1>
+            <hr>
+
+
+            <pre><code class="language-markup">
+                
+            </code></pre>
+            <!-- POPUP ENDS -->
 
 
         </div>
