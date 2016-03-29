@@ -671,14 +671,76 @@ html, body {
 .flex_container {
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  height: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch; }
 
 .flex_item {
-  background: #eb621f;
-  border: 1px solid white; }
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  background: #2c2934;
+  border-left: 1px solid #eb621f;
+  border-right: 1px solid #eb621f;
+  height: 100%; }
   .flex_item:first-of-type {
     -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1; }
+    order: 1;
+    width: 16.6666666667%;
+    overflow: auto;
+    padding: 0 15px; }
+  .flex_item:nth-of-type(2) {
+    display: block;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    width: 83.3333333333%; }
+    .flex_item:nth-of-type(2) .flex_main {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      height: 80%;
+      width: 100%; }
+      .flex_item:nth-of-type(2) .flex_main .flex_child {
+        border: 1px solid #2c646b;
+        overflow: auto; }
+        .flex_item:nth-of-type(2) .flex_main .flex_child:first-of-type {
+          width: 83.3333333333%; }
+        .flex_item:nth-of-type(2) .flex_main .flex_child:last-of-type {
+          width: 16.6666666667%; }
+    .flex_item:nth-of-type(2) .flex_footer {
+      overflow: auto;
+      height: 20%;
+      width: 100%;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-content: flex-end;
+      -ms-flex-line-pack: end;
+      align-content: flex-end; }
 
 /*# sourceMappingURL=app.css.map */
