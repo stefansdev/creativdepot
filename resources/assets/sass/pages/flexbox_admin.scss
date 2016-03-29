@@ -1,0 +1,20 @@
+html, body {
+    background-color: #2c2934;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+// background: #eb621f;
+.flex_container {
+    display: flex;
+
+}
+
+.flex_item {
+    background: #eb621f;
+    border: 1px solid white;
+    &:first-of-type {
+        order: 1;
+    }
+}
