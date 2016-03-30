@@ -18,15 +18,14 @@ html, body {
 .flex_item {
     display: flex;
     height: 100%;
-
     background: #2c2934;
     border-left: 1px solid #eb621f;
     border-right: 1px solid #eb621f;
     &:first-of-type {
+        background: #1c2939;
         order: 1;
         width: span(2);
         overflow: auto;
-
         padding: 0 15px;
     }
     &:nth-of-type(2) {
@@ -41,18 +40,17 @@ html, body {
                 border: 1px solid #2c646b;
                 overflow: auto;
                 &:first-of-type {
-                    width: span(10);
+                    flex: 4;
                 }
                 &:last-of-type {
-                    width: span(2);
+                    flex: 1;
                 }
             }
-
         }
         .flex_footer {
             overflow: auto;
             height: 20%;
-            width: span(12);
+            flex: 1;
             display: flex;
             align-content: flex-end;
         }
