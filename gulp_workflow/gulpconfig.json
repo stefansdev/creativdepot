@@ -1,0 +1,45 @@
+{
+	"autoprefixerBrowsers" : [
+		"last 3 versions",
+		"ie >= 8",
+		"ios >= 7",
+		"android >= 4.4",
+		"bb >= 10"
+	],
+
+	"gzip_options" : {
+		"threshold" : "1kb",
+		"gzipOptions" : {
+			"level" : 9
+		}
+	},
+
+	"sourcePaths" : {
+		"scss" : "resources/templates_mobile/assets/sass/*.scss",
+		"js" : [
+			"resources/templates_mobile/assets/js/*.js"
+		],
+		"php" : [
+			"resources/**/*.php"
+		],
+		"svg" :	"resources/images/svg/*.svg"
+	},
+
+	"deployPaths" : {
+		"scss" : "resources/templates_mobile/assets/deploy/css",
+		"js" : "resources/templates_mobile/assets/deploy/js",
+		"svg" : "resources/images/svg/sprites"
+	},
+
+	"deployFiles" : {
+		"scss" : "main.css",
+		"js" : "main.js"
+	},
+
+	"cleanFiles" : [
+		"resources/templates_mobile/css/main*.css",
+		"resources/templates_mobile/js/main.min*.js"
+	],
+
+	"proxy" : "nekretnine.dev"
+}

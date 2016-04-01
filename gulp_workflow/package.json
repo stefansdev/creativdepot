@@ -1,0 +1,41 @@
+{
+  "name": "nekretnine",
+  "version": "1.0.0",
+  "description": "Nekretnine mobile",
+  "main": "gulpfile.js",
+  "dependencies": {
+      "gulp": "latest",
+      "browser-sync": "latest",
+      "gulp-autoprefixer": "latest",
+      "gulp-cache": "latest",
+      "gulp-concat": "latest",
+      "gulp-gzip": "latest",
+      "gulp-imagemin": "latest",
+      "gulp-jshint": "latest",
+      "gulp-livereload": "latest",
+      "gulp-cssnano": "latest",
+      "gulp-svgstore": "latest",
+      "gulp-svgmin": "latest",
+      "gulp-notify": "latest",
+      "gulp-cheerio": "latest",
+      "gulp-plumber": "latest",
+      "gulp-rename": "latest",
+      "gulp-sass": "latest",
+      "gulp-svg-sprite": "latest",
+      "gulp-uglify": "latest",
+      "gulp-util": "latest",
+      "gulp-watch": "latest",
+      "path": "latest",
+      "susy": "latest"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@makonda.com:23045/nekretnine"
+  },
+  "author": "Makonda",
+  "license": "MIT"
+}
