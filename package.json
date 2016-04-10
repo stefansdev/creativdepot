@@ -1,14 +1,41 @@
 {
-  "private": true,
-  "devDependencies": {
-    "gulp": "^3.8.8",
-    "laravel-elixir-browsersync": "^0.1.5",
-    "node-sass": "^3.4.2",
-    "sass-loader": "^3.2.0",
-    "susy": "^2.2.12",
-    "webpack": "^1.12.14"
-  },
+  "name": "creativdepot",
+  "version": "1.0.0",
+  "description": "CreativDepot",
+  "main": "gulpfile.js",
   "dependencies": {
-    "laravel-elixir": "^4.0.0"
-  }
+      "gulp": "latest",
+      "browser-sync": "latest",
+      "gulp-autoprefixer": "latest",
+      "gulp-cache": "latest",
+      "gulp-concat": "latest",
+      "gulp-gzip": "latest",
+      "gulp-imagemin": "latest",
+      "gulp-jshint": "latest",
+      "gulp-livereload": "latest",
+      "gulp-cssnano": "latest",
+      "gulp-svgstore": "latest",
+      "gulp-svgmin": "latest",
+      "gulp-notify": "latest",
+      "gulp-cheerio": "latest",
+      "gulp-plumber": "latest",
+      "gulp-rename": "latest",
+      "gulp-sass": "latest",
+      "gulp-svg-sprite": "latest",
+      "gulp-uglify": "latest",
+      "gulp-util": "latest",
+      "gulp-watch": "latest",
+      "path": "latest",
+      "susy": "latest"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/St3f4NS/creativdepot"
+  },
+  "author": "St3f4NS",
+  "license": "MIT"
 }

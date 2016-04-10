@@ -15,9 +15,9 @@
 	},
 
 	"sourcePaths" : {
-		"scss" : "resources/templates_mobile/assets/sass/*.scss",
+		"scss" : "resources/assets/sass/*.scss",
 		"js" : [
-			"resources/templates_mobile/assets/js/*.js"
+			"resources/assets/js/*.js"
 		],
 		"php" : [
 			"resources/**/*.php"
@@ -26,9 +26,9 @@
 	},
 
 	"deployPaths" : {
-		"scss" : "resources/templates_mobile/assets/deploy/css",
-		"js" : "resources/templates_mobile/assets/deploy/js",
-		"svg" : "resources/images/svg/sprites"
+		"scss" : "public/css",
+		"js" : "public/js",
+		"svg" : "public/images/svg/sprites"
 	},
 
 	"deployFiles" : {
@@ -41,5 +41,5 @@
 		"resources/templates_mobile/js/main.min*.js"
 	],
 
-	"proxy" : "nekretnine.dev"
+	"proxy" : "creativdepot.dev"
 }
