@@ -1,45 +1,39 @@
 {
-	"autoprefixerBrowsers" : [
-		"last 3 versions",
-		"ie >= 8",
-		"ios >= 7",
-		"android >= 4.4",
-		"bb >= 10"
+	"autoprefixerBrowsers": [
+		"last 2 versions",
+		"> 5%"
 	],
-
-	"gzip_options" : {
-		"threshold" : "1kb",
-		"gzipOptions" : {
-			"level" : 9
+	"gzip_options": {
+		"threshold": "1kb",
+		"gzipOptions": {
+			"level": 9
 		}
 	},
-
-	"sourcePaths" : {
-		"scss" : "resources/assets/sass/*.scss",
-		"js" : [
-			"resources/assets/js/*.js"
+	"sourcePaths": {
+		"scss": "src/scss/**/*.scss",
+		"js": [
+			"src/js/vendor/jquery-2.2.2.js",
+			"src/js/*.js"
 		],
-		"php" : [
-			"resources/**/*.php"
+		"php": [
+			"dist/**/*.php"
 		],
-		"svg" :	"resources/images/svg/*.svg"
+		"svg": [
+			"src/images/*.svg"
+		]
 	},
-
-	"deployPaths" : {
-		"scss" : "public/css",
-		"js" : "public/js",
-		"svg" : "public/images/svg/sprites"
+	"deployPaths": {
+		"scss": "dist/css",
+		"js": "dist/js",
+		"svg": "dist/images"
 	},
-
-	"deployFiles" : {
-		"scss" : "main.css",
-		"js" : "main.js"
+	"deployFiles": {
+		"scss": "main.css",
+		"js": "main.js"
 	},
-
-	"cleanFiles" : [
-		"resources/templates_mobile/css/main*.css",
-		"resources/templates_mobile/js/main.min*.js"
+	"cleanFiles": [
+		"dist/css/main*.css",
+		"dist/js/main.min*.js"
 	],
-
-	"proxy" : "creativdepot.dev"
+	"proxy": "creativdepot.loc"
 }

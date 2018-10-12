@@ -4,10 +4,12 @@
 <head>
     <meta charset="utf-8">
     <title>CreativDepot</title>
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+
+    <?php include "images/images.svg"; ?>
 
     <div class="container">
         <div class="wrap">
@@ -77,7 +79,7 @@
 
 
             <pre><code class="language-markup">
-                
+
             </code></pre>
             <!-- POPUP ENDS -->
 
@@ -87,7 +89,6 @@
 
 
     <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/components.js"></script>
 </body>
 
 </html>
