@@ -2,93 +2,20 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>CreativDepot</title>
-    <link rel="stylesheet" href="css/main.css">
+	<meta charset="utf-8">
+	<title>CreativDepot</title>
+	<link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
 
-    <?php include "images/images.svg"; ?>
+	<?php 
+		// include images only once at the top of the page and use svg icons with svg:use
+		include "images/images.svg";
+		include "templates/header.php";
+	?>
 
-    <div class="container">
-        <div class="wrap">
-            <!-- DROPDOWN STARTS -->
-            <h1>Dropdown</h1>
-            <hr>
-
-            <div class="dropdown">
-                <button type="button" name="button" class="button dropdown_trigger">
-                    Dropdown
-                    <span class="dropdown_icon"></span>
-                </button>
-                <ul class="dropdown_menu">
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Another Link</a></li>
-                    <li><a href="#">Something third here</a></li>
-                </ul>
-            </div>
-
-            <!-- Code example here -->
-            <pre><code class="language-markup">
-                    &lt;div class="dropdown">
-                        &lt;button type="button" name="button" class="button dropdown_trigger">
-                            Dropdown
-                            &lt;span class="dropdown_icon">&lt;/span>
-                        &lt;/button>
-                        &lt;ul class="dropdown_menu">
-                            &lt;li>&lt;a href="#">Link&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Another Link&lt;/a>&lt;/li>
-                            &lt;li>&lt;a href="#">Something third here&lt;/a>&lt;/li>
-                        &lt;/ul>
-                    &lt;/div>
-            </code></pre>
-            <!-- DROPDOWN ENDS -->
-
-            <!-- POPUP STARTS -->
-            <h1>PopUp</h1>
-            <hr>
-
-            <button type="button" name="button" class="button popup-trig" popup-trig="my-popup">OPEN POPUP</button>
-
-            <div class="popup" id="my-popup">
-                <div class="popup-container">
-                    <h2>THIS IS POPUP</h2>
-                    <!-- Close button -->
-                    <button type="button" name="button" class="button popup-close" popup-trig="popup-1">X</button>
-                </div>
-            </div>
-
-            <pre><code class="language-markup">
-                &lt;!-- Trigger -->
-                &lt;button type="button" name="button" class="button popup-trig" popup-trig="my-popup">OPEN POPUP&lt;/button>
-                &lt;!-- Popup -->
-                &lt;div class="popup" id="my-popup">
-                    &lt;div class="popup-container">
-                        &lt;h2>THIS IS POPUP&lt;/h2>
-                        &lt;!-- Close button -->
-                        &lt;button type="button" name="button" class="button popup-close" popup-trig="popup-1">X&lt;/button>
-                    &lt;/div>
-                &lt;/div>
-            </code></pre>
-            <!-- POPUP ENDS -->
-
-            <!-- POPUP STARTS -->
-            <h1></h1>
-            <hr>
-
-
-            <pre><code class="language-markup">
-
-            </code></pre>
-            <!-- POPUP ENDS -->
-
-
-        </div>
-    </div>
-
-
-    <script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>

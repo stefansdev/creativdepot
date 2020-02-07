@@ -1,14 +1,11 @@
+// Vendor Stuff
+// @import "vendor/prism";
+
+// main
 @import "reset";
 @import "variables";
 @import "main";
 @import "fonts";
 
-
 // Components
-@import "components/typography";
-@import "components/elements";
-@import "components/dropdown";
-@import "components/popup";
-
-// Vendor Stuff
-// @import "vendor/prism";
+@import "elements/header";

@@ -10,30 +10,35 @@
 		}
 	},
 	"sourcePaths": {
+		"root": "src/",
 		"scss": "src/scss/**/*.scss",
 		"js": [
-			"src/js/vendor/jquery-2.2.2.js",
+			"src/js/vendor/jquery-3.4.1.min.js",
 			"src/js/*.js"
 		],
 		"php": [
-			"dist/**/*.php"
+			"**/*.php"
+		],
+		"images": [
+			"src/images/**/*.{jpg,jpeg,png,gif}"
 		],
 		"svg": [
 			"src/images/*.svg"
 		]
 	},
 	"deployPaths": {
+		"root": "dist/",
 		"scss": "dist/css",
 		"js": "dist/js",
-		"svg": "dist/images"
+		"images": "dist/images",
+		"svg": "dist/images/svg"
 	},
 	"deployFiles": {
-		"scss": "main.css",
-		"js": "main.js"
+		"scss": "app.css",
+		"js": "app.js"
 	},
 	"cleanFiles": [
-		"dist/css/main*.css",
-		"dist/js/main.min*.js"
+		"dist/css/"
 	],
 	"proxy": "creativdepot.loc"
 }
