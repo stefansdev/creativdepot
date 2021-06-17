@@ -1,0 +1,53 @@
+{
+	"autoprefixerBrowsers": [
+		"last 2 versions",
+		"> 5%"
+	],
+	"gzip_options": {
+		"threshold": "1kb",
+		"gzipOptions": {
+			"level": 9
+		}
+	},
+	"tailwindjs": "./tailwind.config.js",
+	"sourcePaths": {
+		"root": "src/",
+		"tailwind": "src/app.scss",
+		"scss": "src/**/*.scss",
+		"js": [
+			"src/js/vendor/jquery-3.6.0.min.js",
+			"src/js/*.js"
+		],
+		"php": [
+			"**/*.php"
+		],
+		"images": [
+			"src/images/**/*.{jpg,jpeg,png,gif}"
+		],
+		"svg": [
+			"src/images/*.svg"
+		]
+	},
+	"watchFiles": {
+		"style": "src/scss/*.css"
+	},
+	"deployPaths": {
+		"root": "dist/",
+		"scss": "dist/css",
+		"js": "dist/js",
+		"images": "dist/images",
+		"svg": "dist/images/svg"
+	},
+	"deployFiles": {
+		"scss": "app.css",
+		"js": "app.js"
+	},
+	"cleanFiles": [
+		"dist/css/",
+		"dist/images/"
+	],
+	"cleanCSS": [
+		"dist/css/"
+	],
+	"proxy": "creativdepot.loc"
+}
