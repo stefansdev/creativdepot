@@ -9,11 +9,13 @@
 			"level": 9
 		}
 	},
+	"tailwindjs": "./tailwind.config.js",
 	"sourcePaths": {
 		"root": "src/",
-		"scss": "src/scss/**/*.scss",
+		"tailwind": "src/app.scss",
+		"scss": "src/**/*.scss",
 		"js": [
-			"src/js/vendor/jquery-3.4.1.min.js",
+			"src/js/vendor/jquery-3.6.0.min.js",
 			"src/js/*.js"
 		],
 		"php": [
@@ -25,6 +27,9 @@
 		"svg": [
 			"src/images/*.svg"
 		]
+	},
+	"watchFiles": {
+		"style": "src/scss/*.css"
 	},
 	"deployPaths": {
 		"root": "dist/",
@@ -38,6 +43,10 @@
 		"js": "app.js"
 	},
 	"cleanFiles": [
+		"dist/css/",
+		"dist/images/"
+	],
+	"cleanCSS": [
 		"dist/css/"
 	],
 	"proxy": "creativdepot.loc"

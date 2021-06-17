@@ -1,4 +1,4 @@
-<header>
+<header class="bg-blue-100">
 	<nav>
 		<ul>
 			<li>

@@ -9,11 +9,15 @@
 
 <body>
 
-	<?php 
-		// include images only once at the top of the page and use svg icons with svg:use
-		include "images/images.svg";
-		include "templates/header.php";
+	<?php
+	// include images only once at the top of the page and use svg icons with svg:use
+	include "images/svg/images.svg";
+	include "templates/header.php";
 	?>
+	<svg>
+		<use xlink:href="#hello">
+		</use>
+	</svg>
 
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
