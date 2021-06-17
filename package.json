@@ -19,7 +19,7 @@
 		"gulp-change": "^1.0.2",
 		"gulp-concat": "^2.6.1",
 		"gulp-plumber": "^1.2.1",
-		"node-sass": "^6.0.0",
+		"node-sass": "^4.13.1",
 		"postcss-import": "^14.0.2",
 		"postcss-scss": "^3.0.5"
 	},
