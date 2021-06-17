@@ -1,8 +1,8 @@
-# creativdepot
+# creativdepot - Gulp with tailwindcss
 
 CreativDepot - gulp with tailwindcss
 
-This gulp workflow support tailwindcss, scss, js compile and minification, auto image optimization, svgstore (puts all svgs to one file and can be used with `<use>`).
+This gulp workflow support tailwindcss, scss, js compile and minification, auto image optimization, svgstore (puts all svgs to one file and can be used with `<use>`), browsersync ...
 
 # HOW TO USE:
 
