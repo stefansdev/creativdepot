@@ -1,9 +1,9 @@
-@import "vendor/tailwind";
+@use "vendor/tailwind";
 
 // main
-@import "variables";
-@import "main";
-@import "fonts";
+@use "variables";
+@use "main";
+@use "fonts";
 
 // Components
-@import "elements/header";
+@use "elements/header";
