@@ -1,11 +1,14 @@
+'use strict';
 import { src, dest, watch, series, parallel } from 'gulp';
 import yargs from 'yargs';
-var sass = require('gulp-sass')(require('sass'));
+import dartSass from 'sass';
+import gulpSass from 'gulp-sass';
+const sass = gulpSass(dartSass);
 import cleanCss from 'gulp-clean-css';
 import gulpif from 'gulp-if';
 import postcss from 'gulp-postcss';
 import sourcemaps from 'gulp-sourcemaps';
-import image from 'gulp-image';
+import image from 'gulp-imagemin';
 import concat from 'gulp-concat';
 import uglify from 'gulp-uglify';
 import plumber from 'gulp-plumber';
